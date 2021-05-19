@@ -1,0 +1,21 @@
+.team__name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--alt-title-color);
+}
+
+.team__title,
+.team__text {
+  margin: 0;
+  background-color: var(--alt-title-color);
+}
+
+.team-section {
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}

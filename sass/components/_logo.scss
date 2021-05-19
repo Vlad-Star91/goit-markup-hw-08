@@ -1,0 +1,26 @@
+.logo {
+  margin-right: 93px;
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.page-header__logo {
+  margin-right: 93px;
+}
+
+.logo--accent {
+  color: var(--accent-color);
+}
+
+.footer .logo {
+  color: var(--alt-title-color);
+  font-family: var(--title-font);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}

@@ -1,0 +1,50 @@
+.auth-nav .link {
+  display: flex;
+  align-items: center;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--alt-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.auth-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.auth-nav {
+  display: flex;
+}
+.auth-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-nav .auth-nav__link {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.auth-navigation__link {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.footer .auth-navigation {
+  display: block;
+}

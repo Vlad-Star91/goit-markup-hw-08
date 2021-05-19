@@ -1,0 +1,27 @@
+.social-icons {
+  display: inline-flex;
+  list-style: none;
+}
+.social-icons__item {
+  margin-top: 16px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-icons__svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-icons);
+
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social-icons__link:hover &,
+  .social-icons__link:focus & {
+    fill: var(--alt-title-color);
+    background-color: var(--accent-color);
+  }
+}

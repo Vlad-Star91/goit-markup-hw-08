@@ -1,0 +1,23 @@
+.features-list__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--team-bg);
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-list {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  display: flex;
+}
+.features-list__item {
+  display: block;
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

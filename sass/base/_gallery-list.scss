@@ -1,0 +1,7 @@
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  margin-left: -30px;
+  margin-top: -30px;
+}

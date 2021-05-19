@@ -1,0 +1,14 @@
+.address {
+  font-style: inherit;
+  margin-top: 20px;
+  margin-bottom: 9px;
+
+  .footer & {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--alt-title-color);
+  }
+}

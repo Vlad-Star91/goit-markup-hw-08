@@ -1,0 +1,34 @@
+.gallery-list .section-text {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--alt-text-color);
+  margin-bottom: 0px;
+}
+
+.features-list .features-list_text {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--alt-text-color);
+}
+
+.overlay-text {
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--alt-title-color);
+  padding: 63px 24px;
+}
+
+.team-list .team__text {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--alt-text-color);
+}
