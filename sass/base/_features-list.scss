@@ -10,9 +10,18 @@
 }
 
 .features-list {
-  flex-basis: calc((100% - 4 * 30px) / 4);
-  display: flex;
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
+
 .features-list__item {
   display: block;
   width: 270px;

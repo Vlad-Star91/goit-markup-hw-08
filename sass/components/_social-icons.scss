@@ -1,12 +1,22 @@
 .social-icons {
   display: inline-flex;
   list-style: none;
-}
-.social-icons__item {
-  margin-top: 16px;
+  padding-left: 122px;
 
-  &:not(:last-child) {
-    margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    padding-left: 74px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 30px;
+  }
+
+  .social-icons__item {
+    margin-top: 16px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 }
 

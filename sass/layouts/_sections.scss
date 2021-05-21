@@ -1,6 +1,6 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--dark-bg);
@@ -16,6 +16,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+  }
 }
 
 .portfolio {
@@ -38,7 +48,18 @@
   padding-bottom: 94px;
 }
 .work {
-  padding-bottom: 94px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    flex-basis: calc(100% / 3 - 30px);
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .clients {
@@ -51,7 +72,7 @@
 }
 
 .footer {
-  display: flex;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--dark-bg);
