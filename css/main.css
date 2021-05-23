@@ -563,6 +563,7 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -596,12 +597,24 @@ img {
   font-family: var(--main-font);
   font-weight: 900;
   max-width: 696px;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--alt-title-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero__title {
+    font-size: 42px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero .hero__title {
+    font-size: 44px;
+  }
 }
 
 .gallery-list .section-title {
@@ -1067,12 +1080,18 @@ img {
 }
 
 .site-nav {
-  display: inline-flex;
+  display: none;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 768px) {
   .site-nav {
-    display: none;
+    display: inline-flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    display: inline-flex;
   }
 }
 
