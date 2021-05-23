@@ -31,11 +31,20 @@
 .features-list__item .features-list__title {
   font-family: var(--main-font);
   font-size: 14px;
+  text-align: center;
   font-weight: bold;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
+
+  @media screen and (min-width: 768px) {
+    text-align: inherit;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: inherit;
+  }
 }
 
 .footer-subscribe .footer-subscribe__title {

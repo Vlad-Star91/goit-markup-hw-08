@@ -3,10 +3,26 @@
   justify-content: center;
   align-items: center;
   background-color: var(--team-bg);
-  width: 270px;
+  width: 450px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 120px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--team-bg);
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
 }
 
 .features-list {
@@ -23,10 +39,22 @@
 }
 
 .features-list__item {
-  display: block;
-  width: 270px;
+  width: 100%;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
