@@ -25,7 +25,26 @@
 
 .auth-nav {
   display: flex;
+
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
+
+.auth-nav.is-open {
+  display: block;
+}
+
 .auth-item {
   display: inline-flex;
   align-items: center;

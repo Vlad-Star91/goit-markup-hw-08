@@ -36,5 +36,10 @@
 }
 
 .footer-subscribe .subscribe-block {
-  display: flex;
+  display: block;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }

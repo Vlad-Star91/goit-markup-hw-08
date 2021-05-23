@@ -1,5 +1,13 @@
 .site-nav {
   display: inline-flex;
+
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+}
+
+.site-nav.is-open {
+  display: block;
 }
 
 .site-nav__link {

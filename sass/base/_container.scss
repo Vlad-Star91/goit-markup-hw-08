@@ -6,7 +6,7 @@
   margin-right: auto;
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    max-width: 480px;
   }
 
   @media screen and (min-width: 768px) {
@@ -19,6 +19,7 @@
 }
 
 .page-header .container {
+  position: relative;
   display: block;
 
   @media screen and (min-width: 768px) {
@@ -33,6 +34,9 @@
 }
 
 .flex-container {
+  display: block;
+  text-align: center;
+
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
