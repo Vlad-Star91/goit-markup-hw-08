@@ -33,12 +33,20 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
+    top: 10px;
   }
+}
+
+.auth-nav__link:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .auth-nav.is-open {
