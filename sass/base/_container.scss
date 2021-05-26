@@ -35,7 +35,13 @@
 
 .flex-container {
   display: block;
-  text-align: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
 
   @media screen and (min-width: 1200px) {
     display: flex;

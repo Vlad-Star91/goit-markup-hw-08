@@ -7,12 +7,25 @@
 }
 
 .footer__contacts {
-  display: block;
-  margin-right: 70px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-right: 70px;
+  }
 }
 
 .footer-subscribe {
-  display: block;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 
   & input {
     font-size: 16px;
@@ -40,6 +53,7 @@
   align-items: center;
 
   @media screen and (min-width: 1200px) {
+    position: relative;
     display: flex;
   }
 }
