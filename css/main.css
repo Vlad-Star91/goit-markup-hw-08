@@ -585,7 +585,6 @@ img {
   display: inline-flex;
   width: 200px;
   height: 50px;
-  margin-top: 20px;
   padding-left: 29px;
   padding-right: 28px;
   color: var(--alt-title-color);
@@ -603,9 +602,21 @@ img {
   cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-subscribe__button {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-subscribe__button {
+    margin-top: 20px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-subscribe__button {
-    margin-top: 35px;
+    margin-top: 0;
   }
 }
 
@@ -729,6 +740,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-subscribe .footer-subscribe__title {
+    padding-top: 60px;
+  }
 }
 
 .team-list .team__title {
@@ -1622,7 +1639,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
   width: 450px;
   height: 50px;
-  margin-top: 20px;
   margin-right: 12px;
   padding-left: 16px;
   padding-top: 15px;
@@ -1637,7 +1653,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-subscribe input {
-    width: 600px;
+    width: 450px;
   }
 }
 
@@ -1659,7 +1675,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
   }
 }
 
