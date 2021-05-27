@@ -141,7 +141,7 @@
 
 .form-modal__submit {
   position: absolute;
-  right: 164px;
+  right: 125px;
   bottom: 40px;
   width: 200px;
   height: 50px;
@@ -156,6 +156,14 @@
   letter-spacing: 0.06em;
   color: var(--alt-title-color);
   cursor: pointer;
+
+  @media screen and (max-width: 1199px) {
+    right: 125px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: 164px;
+  }
 }
 
 .form-list__field {
