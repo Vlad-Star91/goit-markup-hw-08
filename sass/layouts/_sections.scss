@@ -16,48 +16,30 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
 
-@media screen and (min-width: 768px) {
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url('../images/tablet/hero/Hero.jpg');
-  background-size: cover;
-}
-
-@media screen and (min-width: 1200px) {
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url('../images/desktop/hero/Hero.jpg');
-  background-size: cover;
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
   @media screen and (max-width: 767px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/mobile/hero/Hero@2x.jpg');
+      url('../images/mobile/hero/Hero.jpg'),
+      url('../images/mobile/hero/Hero.webp');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/tablet/hero/Hero@2x.jpg');
+      url('../images/tablet/hero/Hero.jpg'),
+      url('../images/tablet/hero/Hero.webp');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
   }
 
@@ -67,7 +49,10 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/desktop/hero/Hero@2x.jpg');
+      url('../images/desktop/hero/Hero.jpg'),
+      url('../images/desktop/hero/Hero.webp');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
   }
 }
@@ -75,21 +60,51 @@
 .portfolio {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--team-bg);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .work {
   display: none;
@@ -107,12 +122,21 @@
 }
 
 .clients {
-  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--alt-title-color);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .footer {

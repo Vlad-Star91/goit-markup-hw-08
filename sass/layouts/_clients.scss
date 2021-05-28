@@ -63,11 +63,15 @@
 }
 
 .clients {
-  margin-bottom: 50px;
   text-align: center;
   font-family: var(--main-font);
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--title-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
