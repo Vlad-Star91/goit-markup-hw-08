@@ -200,13 +200,13 @@ img {
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .features-list__box {
-    width: 320px;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .features-list__box {
-    width: 450px;
+    width: 100%;
   }
 }
 
